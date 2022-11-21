@@ -1,0 +1,78 @@
+/* CSS[2] - Selector */
+
+/* CSS[3] - Variables */
+:root{
+    --var1: blueviolet;
+    --var2: 20px;
+    /* display: none;   */
+}
+
+.tab-class{
+    width: 200vw;
+    text-align: center;
+}
+
+/* class */
+.class-a{
+    background-color: blue;
+    width: 500px;
+}
+
+/* id */
+#this-id{
+    background-color: var(--var1);
+    /* background-color: blueviolet; */
+
+}
+
+/* select all */
+*{
+    font-size: var(--var3, 30px);
+    /* font-size: 40px; */
+}
+
+/* Try CSS Selector ได้ที่นี่ https://w3schools.com/csSref/trysel.php */
+
+
+
+/* element */
+body{
+    background-color: green;
+}
+
+/* CSS[4] - Responsive, Media, Viewport  */
+@media screen and (max-width: 600px) and (min-width: 300px){
+    body{
+        background-color: aqua;
+    }
+
+   
+}
+
+@media screen and (orientation: portrait){
+    body{
+        background-color: azure;
+    }
+}
+
+
+/* CSS[5] - Display type, flexbox */
+.flex-naja{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;   
+   
+    background-color: brown;
+}
+
+.button-naja{
+    display: flex;  
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 30vw;
+    margin: 10px;
+    padding: 10px;
+}

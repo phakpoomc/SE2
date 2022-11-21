@@ -1,13 +1,23 @@
+
+<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8">
+    <!-- CSS[5] - Viewport init -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> หัวข้อ </title>
-    
+    <!-- CSS[1] -->
+    <link rel="stylesheet" href="style.css">
+    <script src="file-javascript.js"></script>
 </head>
 <body>
     <div class="class1">
         ส่วนนี้คือคอนเท้น
     </div>  
+
+    
+
     <h1> ใหญ่สุด </h1>
     <h2> ใหญ่รองลงมา </h2>
     <h3> เริ่มเล็กละ </h3>   
@@ -40,7 +50,7 @@
         <li>หัวข้อย่อยรายการที่ 2</li>
     </ul>
        
-    <table border="2">
+    <table border="2" class="tab-class">
         <thead>
             <tr>
                 <td> Head 1 </td>
@@ -65,5 +75,30 @@
         </tfoot>
     </table>
 
+    <br><br>
+    Reference: https://w3schools.com/tags/tag_input.asp
+    <form action="/submit.php" id="this-id">
+        <label for="uid"> ใส่ไอดีตรงนี้: </label>
+        <input type="text" id="uid"> <br>
+        <label for="color"> ใส่สีตรงนี้: </label>
+        <input type="color" id="color"><br>
+        <label for="time"> ใส่เวลาตรงนี้: </label>
+        <input type="datetime-local" id="time">
+    </form>
+
+    <div class="class-a">
+        This is a div. <br>
+    </div>
+
+    <div class="flex-naja">
+        <input type="button" class="button-naja" id="b1" value="Hello">
+        <input type="button" class="button-naja" id="b2" value="I'm fine">
+        <input type="button" class="button-naja" id="b3" value="Thank you!">
+    </div>
+
+    <script>
+        document.write("ส่วนนี้เขียนโดยจาวาสคริป");
+        console.log("ส่วนนี้จะอยู่ใน debugger");
+    </script>
 </body>
 </html>
